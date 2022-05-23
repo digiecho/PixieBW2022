@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
+gsap.core.globals("ScrollTrigger", ScrollTrigger);
+gsap.core.globals("MorphSVGPlugin", MorphSVGPlugin);
 gsap.config({ trialWarn: false });
 // initail settings
 circle = document.getElementById("blackpixie");
@@ -116,7 +118,7 @@ gsap.to(
   {
     morphSVG: "#body1",
     type: "rotational",
-    map: "position",
+
     duration: 1,
     immediateRender: false,
     scrollTrigger: {
@@ -133,12 +135,11 @@ gsap.fromTo(
   circle,
   {
     morphSVG: "#body1",
-    map: "position",
   },
   {
     morphSVG: "#darkgraypixie2",
     type: "rotational",
-    map: "position",
+
     duration: 1,
     immediateRender: false,
     scrollTrigger: {
@@ -154,12 +155,11 @@ gsap.fromTo(
   circle,
   {
     morphSVG: "#darkgraypixie2",
-    map: "position",
   },
   {
     morphSVG: "#body2",
     type: "rotational",
-    map: "position",
+
     duration: 1,
     immediateRender: false,
     scrollTrigger: {
@@ -175,12 +175,11 @@ gsap.fromTo(
   circle,
   {
     morphSVG: "#body2",
-    map: "position",
   },
   {
     morphSVG: "#head1",
     type: "rotational",
-    map: "position",
+
     duration: 1,
     immediateRender: false,
     scrollTrigger: {
