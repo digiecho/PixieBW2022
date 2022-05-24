@@ -330,3 +330,18 @@ text-decoration: none !important;
   color:#fff !important;
   text-decoration: none !important;
   }
+  .pixiewhite{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width:50px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    z-index: 10;
+    }
+    #dib-post-single > p.dib-post-featured-image {
+      width:300px !important;
+    }
+    #dib-post-single > p.dib-post-featured-image > img {
+      max-width:300px !important;
+    }
