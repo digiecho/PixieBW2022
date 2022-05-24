@@ -6,7 +6,7 @@ html{
 }
 body { 
   height: 100%;
-  background-color:black;
+  background-color:rgb(54, 54, 54);
   overflow-x:hidden;
   /* mix-blend-mode: difference; */
 }
@@ -28,7 +28,7 @@ h1,
 h2 {
   font-family: "Dancing Script";
   /* font-size: 10rem; */
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 h2 {
   font-size: 3rem;
@@ -40,10 +40,12 @@ p {
   /* text-align: justify; */
 }
 
-h2,
+
 h3 {
   mix-blend-mode: difference;
   padding: 2rem;
+  font-size:16px;
+  
 }
 h4 {
   mix-blend-mode: difference;
@@ -177,7 +179,7 @@ svg {
 .btn-my {
   border-color: #fff;
   color: #fff;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   
 }
 
@@ -189,8 +191,8 @@ svg {
   color: #fff;
   stroke: none;
   mix-blend-mode: difference;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%) contrast(200%) brightness(150%);
+  /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /* filter: grayscale(100%) contrast(200%) brightness(150%);  */
 }
 
 #sidebar-wrapper {
