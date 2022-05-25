@@ -36,7 +36,6 @@ gsap.set("#head1", {
 // Scrolling backdrop
 //background moving
 gsap.to("#blackpixie", {
-  scrollTrigger: "#v-spacer-1",
   transformOrigin: "50% 50%",
   scale: 2,
   repeat: -1,
@@ -46,7 +45,6 @@ gsap.to("#blackpixie", {
   duration: 17.5,
 });
 gsap.to("#darkgraypixie", {
-  scrollTrigger: "#v-spacer-1",
   transformOrigin: "50% 50%",
   x: "-50%",
   repeat: -1,
@@ -56,7 +54,6 @@ gsap.to("#darkgraypixie", {
   duration: 17.5,
 });
 gsap.to("#darkgraypixie2", {
-  scrollTrigger: "#v-spacer-1",
   transformOrigin: "50% 50%",
   x: 5000,
   repeat: -1,
@@ -68,7 +65,6 @@ gsap.to("#darkgraypixie2", {
 });
 
 gsap.to("#lightgraypixie", {
-  scrollTrigger: "#v-spacer-1",
   transformOrigin: "50% 50%",
   scale: 0.5,
   opacity: 0,
