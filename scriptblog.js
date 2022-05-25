@@ -2,6 +2,11 @@ gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin);
 gsap.config({ trialWarn: false });
 // initail settings
 circle = document.getElementById("blackpixie");
+var tl = new TimelineMax({ repeat: -1 });
+tl.to(".clouds", 300, {
+  backgroundPosition: "10000px 0",
+  ease: Linear.easeNone,
+});
 gsap.set("#lightgraypixie", {
   scale: 2,
   transformOrigin: "50% 50%",

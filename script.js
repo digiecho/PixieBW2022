@@ -276,6 +276,14 @@ ScrollTrigger.matchMedia({
       },
       x: -5000,
     });
+
+    var tl = new TimelineMax({ repeat: -1 });
+    tl.to(".clouds", 300, {
+      backgroundPosition: "10000px 0",
+      ease: Linear.easeNone,
+    });
+
+    // let tween = gsap.fromTo(".move-clouds-back", { backgroundPosition:" 0 0"}, {backgroundPosition: "10000px 0", duration:200});
   },
 });
 

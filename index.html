@@ -29,18 +29,23 @@
   </head>
 
   <body>
+    <div id='Body'>
     <!-- partial:index.partial.html -->
     <div class="animation-wrapper">
       <div class="page-bg">
-        <div class="particle particle-1"></div>
+        <div class="particle particle-1" mask="url(#twinkling)"></div>
         <div class="particle particle-2"></div>
         <div class="particle particle-3"></div>
 
       </div>
     </div>
     <div class="particle particle-4"></div>
-    <div class="stars"></div>
-<div class="twinkling"></div>
+
+    <!-- <div class="stars" mask="url(.twinkling)" ></div> -->
+<div id="twinkling" class="twinkling" >
+
+  <img class="stars" src="./assets/img/stars.png" mask="url(#twinkling)"></img>
+</div>
 <div class="clouds"></div>
     <svg
     id="svg5"
@@ -786,7 +791,7 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
             </div>
           </div>
           <div class="row text-center text-my">
-            <div data-aos="zoom-in-up" class="col-md-4 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-12 col-lg-4 order-12 mb-5  whiteboarder ">
               <span class="fa-stack fa-2x"
                 ><i class="fa fa-circle fa-stack-2x"></i
                 ><i class="fa fa-thin fa-broom fa-stack-1x fa-inverse"></i
@@ -800,7 +805,7 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
                 bookings through positive word of mouth.
               </p>
             </div>
-            <div data-aos="zoom-in-up" class="col-md-4 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-4 mb-5 whiteboarder ">
               <span class=" fa-stack fa-2x"
                 ><i class=" fa fa-circle fa-stack-2x"></i
                 ><i
@@ -814,10 +819,11 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
                 With help from agencies such as Read in Partnership we support
                 adults with disabilities and others who are struggling in the
                 workplace to fulfil their goals and transform communities for
-                the better. <a href="https://digiecho.github.io/PixieBW2022/blog.html?p=disability-confident-employer">Find out more...</a>
+                the better. 
               </p>
+              <a class="btn btn-my btn-l js-scroll-trigger " href="https://digiecho.github.io/PixieBW2022/blog.html?p=disability-confident-employer">Find out more...</a>
             </div>
-            <div data-aos="zoom-in-up" class="col-md-4 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-4 mb-5  whiteboarder ">
               <span class=" fa-stack fa-2x"
                 ><i class=" fa fa-circle fa-stack-2x"></i
                 ><i class=" fa fa-globe fa-stack-1x fa-inverse"></i
@@ -830,8 +836,9 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
                 minimise our plastic waste by buying in bulk and refilling our
                 containers. After festival cleans, we resow grass seed to aid in
                 natures recovery and we plan to host voluntary beach and
-                wildlife cleans to keep our planet sparkling! <a href="https://digiecho.github.io/PixieBW2022/blog.html?p=ecover">Find out more...</a> 
-              </p>
+                wildlife cleans to keep our planet sparkling! </p>
+                <a class="btn btn-my btn-l js-scroll-trigger " href="https://digiecho.github.io/PixieBW2022/blog.html?p=ecover">Find out more...</a> 
+              
             </div>
           </div>
         </div>
@@ -844,7 +851,7 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
             >Our Services</a
           >
           <a
-          class="btn btn-my btn-l js-scroll-trigger margin-auto "
+          class="btn btn-my btn-l js-scroll-trigger"
           role="button"
           href="./blog.html"
          
@@ -864,51 +871,60 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
             <h2 class="mb-5">What We Offer</h2>
           </div>
           <div class="row">
-            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder2">
               <span class="fa-stack fa-2x"
                 ><i class="fa fa-circle fa-stack-2x"></i
                 ><i class="fa fa-pencil fa-stack-1x fa-inverse"></i
               ></span>
 
               <h4><strong>Bespoke</strong></h4>
-              <p class="mb-0 text-faded">
+              <p class=" text-faded">
                 Need a bespoke service? We have you covered! 
               </p>
-              <span><a href="#contact">Contact Us</a></span>
+              <span><a class="btn btn-my btn-l js-scroll-trigger " href="#contact">Contact Us</a></span>
             </div>
-            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder2 ">
               <span class="fa-stack fa-2x"
                 ><i class="fa fa-circle fa-stack-2x"></i
                 ><i class="fa fa-home fa-stack-1x fa-inverse"></i
               ></span>
               <h4><strong>Domestic</strong></h4>
-              <p class="mb-0 text-faded">
-                We treat your home better than our own! <a href="#blog.html?p=cleaning-your-home">Find out more</a>
+              <p class=" text-faded">
+                We treat your home better than our own! 
               </p>
+              
+                
+              <span><a class="btn btn-my btn-l js-scroll-trigger " href="#blog.html?p=cleaning-your-home">Find out more</a></span>
             </div>
-            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder2 ">
               <span class="fa-stack fa-2x"
                 ><i class="fa fa-circle fa-stack-2x"></i
                 ><i class="fa fa-building fa-stack-1x fa-inverse"></i
               ></span>
               <h4><strong>Commercial</strong></h4>
-              <p class="mb-0 text-faded">
+              <p class=" text-faded">
                 Need staff? reccuring attendence? or need to partner?
-                <span><a href="#contact">Contact Us</a></span>
+                
               </p>
+              
+                <span><a class="btn btn-my btn-l js-scroll-trigger " href="#contact">Contact Us</a></span>
+              
             </div>
-            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder ">
+            <div data-aos="zoom-in-up" class="col-md-6 col-lg-3 mb-5 mb-lg-0 whiteboarder2 ">
               <span class="fa-stack fa-2x"
                 ><i class="fa fa-circle fa-stack-2x"></i
                 ><i class="fa fa-industry fa-stack-1x fa-inverse"></i
               ></span>
               <h4><strong>Industrial</strong></h4>
-              <p class="mb-0 text-faded">
+              <p class=" text-faded">
                 We have Pixies for all events! no matter what the size, we
                 always bring the magic.
               </p>
-              Check out some of the events we have done <a href="https://digiecho.github.io/PixieBW2022/blog.html?c=businesses-we-work-with">Here...</a>
-            </div>
+            </p>
+
+          <span>
+            <a class="btn btn-my btn-l js-scroll-trigger " href="https://digiecho.github.io/PixieBW2022/blog.html?c=businesses-we-work-with">Find out more</a>
+          </span>
           </div>
           <div class="padding">
             <a
@@ -1207,5 +1223,6 @@ c26-31.5,44.6-69.9,90.3-99.7c53.8,76.6,80.4,158.6,113,237.7C3613.1,4706,3601.5,4
     <script>
       AOS.init();
     </script>
+    </div>
   </body>
 </html>
