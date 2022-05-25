@@ -415,3 +415,9 @@ text-decoration: none !important;
   .dib-meta-text{
     visibility:hidden;
   }
+  #dib-template-2 > div > a{
+    margin:auto !important;
+  }
+  #dib-template-2 > div > a > div > p.dib-author-photo {
+    visibility: hidden;
+  }
