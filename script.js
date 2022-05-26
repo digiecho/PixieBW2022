@@ -5,7 +5,7 @@ gsap.config({ trialWarn: false });
 
 bighead = document.getElementById("bighead");
 bigheadMobile = document.getElementById("bigheadMobile");
-
+CSSPlugin.defaultForce3D = true;
 ScrollTrigger.matchMedia({
   // desktop
   "(min-width: 800px)": function () {
@@ -190,18 +190,18 @@ ScrollTrigger.matchMedia({
     // ScrollTriggers created here aren't associated with a particular media query,
     // so they persist.
     gsap.set("#lightgraypixie", {
-      scale: 2,
+      scale: 2.01,
       transformOrigin: "50% 50%",
       opacity: 0.5,
     });
     gsap.set("#darkgraypixie2", {
-      scale: 2,
+      scale: 2.01,
       transformOrigin: "50% 50%",
       opacity: 0.3,
       x: "-50%",
     });
     gsap.set("#darkgraypixie", {
-      scale: 2,
+      scale: 2.01,
       transformOrigin: "50% 50%",
       opacity: 0.3,
       x: "-50%",
@@ -220,17 +220,17 @@ ScrollTrigger.matchMedia({
       },
       opacity: 0,
     });
+    gsap.to("#PageButton, .logotext", {
+      scrollTrigger: {
+        trigger: "#v-spacer-1",
+        // markers: true,
+        scrub: true,
+        start: "top top",
+        end: "200px",
+      },
+      opacity: 0,
+    });
 
-    // gsap.to("#bighead", {
-    //   // scrollTrigger: "#v-spacer-1",
-    //   transformOrigin: "50% 50%",
-    //   scale: 1.5,
-    //   repeat: -1,
-    //   yoyo: true,
-    //   ease: "back",
-    //   // scrub: true,
-    //   duration: 17.5,
-    // });
     gsap.to("#darkgraypixie2", {
       transformOrigin: "50% 50%",
       x: "-50%",
@@ -255,7 +255,7 @@ ScrollTrigger.matchMedia({
     gsap.to("#lightgraypixie", {
       scrollTrigger: "#v-spacer-1",
       transformOrigin: "50% 50%",
-      scale: 0.5,
+      scale: 0.51,
       opacity: 0,
       repeat: -1,
       // scrub: true,
@@ -282,23 +282,39 @@ ScrollTrigger.matchMedia({
       ease: Linear.easeNone,
     });
 
-    // var tl2 = new TimelineMax({ repeat: -1 });
-    // tl2.to(".twinkling", 300, {
-    //   backgroundPosition: "0 10000%",
-    //   ease: Linear.easeNone,
-    // });
+    var tl2 = new TimelineMax({ repeat: -1 });
+    tl2.to(".twinkling", 200, {
+      webkitMaskPosition: "0 10000px",
+      ease: Linear.easeNone,
+    });
     gsap.to(".twinkling", {
       backgroundPosition: "0% 100%",
       ease: "none",
       scrollTrigger: {
         trigger: "#v-spacer-2",
         // start: "top",
-        end: +15000,
+        end: +30000,
         scrub: 0.5,
       },
     });
 
-    // let tween = gsap.fromTo(".move-clouds-back", { backgroundPosition:" 0 0"}, {backgroundPosition: "10000px 0", duration:200});
+    // var tl = new TimelineMax({ repeat: -1 });
+    tl.to(".particle-1", 60, {
+      y: "-2560px",
+      ease: Linear.easeNone,
+    });
+    tl.to(".particle-2", 120, {
+      y: "-2560px",
+      ease: Linear.easeNone,
+    });
+    tl.to(".particle-3", 180, {
+      y: "-2560px",
+      ease: Linear.easeNone,
+    });
+    tl.to(".particle-4", 600, {
+      y: "-2560px",
+      ease: Linear.easeNone,
+    });
   },
 });
 

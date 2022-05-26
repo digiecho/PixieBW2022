@@ -779,7 +779,7 @@
 }
 
 .twinkling {
-  background: transparent url(./assets/img/stars.png) repeat top center;
+  background: transparent url(./assets/img/stars.webp) repeat top center;
   background-repeat: repeat-y;
   background-size: 100%;
   position: fixed;
@@ -790,39 +790,17 @@
   display: block;
   z-index: 4;
   pointer-events: none;
-  -webkit-mask-image: url(./assets/img/twinkling2.png);
-  mask-image: url(./assets/img/twinkling2.png);
-  -webkit-mask-size: 200px;
-  mask-size: 200px;
-
+  -webkit-mask-image: url(./assets/img/twinkling2.webp);
+  mask-image: url(./assets/img/twinkling2.webp);
+  -webkit-mask-size: 100px;
+  mask-size: 100px;
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
-  /* mask-mode: alpha; */
-
-  animation: clip-fade 100s infinite alternate;
-  /* background: transparent url(./assets/img/twinkling.png) repeat top center; */
-  /* -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite; */
-}
-@keyframes clip-fade {
-  100% {
-    -webkit-mask-position: right;
-    mask-position: right;
-  }
 }
 
 .clouds {
-  background: transparent url(./assets/img/clouds3.png) repeat top center;
+  background: transparent url(./assets/img/clouds.webp) repeat top center;
   z-index: 7;
   filter: grayscale();
   opacity: 0.4;
-
-  /* -moz-animation: move-clouds-back 200s linear infinite;
-  -ms-animation: move-clouds-back 200s linear infinite;
-  -o-animation: move-clouds-back 200s linear infinite;
-  -webkit-animation: move-clouds-back 200s linear infinite;
-  animation: move-clouds-back 200s linear infinite; */
 }
