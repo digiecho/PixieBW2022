@@ -754,7 +754,6 @@
   }
 }
 
-
 .stars,
 .twinkling,
 .clouds {
@@ -768,7 +767,6 @@
   display: block;
   z-index: 4;
   pointer-events: none;
-  
 }
 
 .stars {
@@ -781,25 +779,28 @@
 }
 
 .twinkling {
+  background: transparent url(./assets/img/stars.png) repeat top center;
+  background-repeat: repeat-y;
+  background-size: 100%;
   position: fixed;
-  top: 0;
+  /* top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   display: block;
   z-index: 4;
   pointer-events: none;
   -webkit-mask-image: url(./assets/img/twinkling2.png);
   mask-image: url(./assets/img/twinkling2.png);
-  -webkit-mask-size:20px;
-  mask-size: 20px;
- 
+  -webkit-mask-size: 200px;
+  mask-size: 200px;
+
   -webkit-mask-repeat: repeat;
   mask-repeat: repeat;
   /* mask-mode: alpha; */
 
   animation: clip-fade 100s infinite alternate;
-  /* background: transparent url(./assets/img/twinkling.png) repeat top center; */ */
+  /* background: transparent url(./assets/img/twinkling.png) repeat top center; */
   /* -moz-animation: move-twink-back 200s linear infinite;
   -ms-animation: move-twink-back 200s linear infinite;
   -o-animation: move-twink-back 200s linear infinite;

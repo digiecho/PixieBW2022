@@ -231,8 +231,7 @@ ScrollTrigger.matchMedia({
     //   // scrub: true,
     //   duration: 17.5,
     // });
-    gsap.to("#darkgraypixie", {
-      scrollTrigger: "#v-spacer-1",
+    gsap.to("#darkgraypixie2", {
       transformOrigin: "50% 50%",
       x: "-50%",
       repeat: -1,
@@ -271,7 +270,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: "#v-spacer-1",
         // markers: true,
-        // scrub: true,
+        scrub: true,
         start: "top top",
       },
       x: -5000,
@@ -281,6 +280,22 @@ ScrollTrigger.matchMedia({
     tl.to(".clouds", 300, {
       backgroundPosition: "10000px 0",
       ease: Linear.easeNone,
+    });
+
+    // var tl2 = new TimelineMax({ repeat: -1 });
+    // tl2.to(".twinkling", 300, {
+    //   backgroundPosition: "0 10000%",
+    //   ease: Linear.easeNone,
+    // });
+    gsap.to(".twinkling", {
+      backgroundPosition: "0% 100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: "#v-spacer-2",
+        // start: "top",
+        end: +15000,
+        scrub: 0.5,
+      },
     });
 
     // let tween = gsap.fromTo(".move-clouds-back", { backgroundPosition:" 0 0"}, {backgroundPosition: "10000px 0", duration:200});
