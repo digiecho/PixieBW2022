@@ -12,12 +12,12 @@ gsap.set("#lightgraypixie", {
   transformOrigin: "50% 50%",
   opacity: 0.5,
 });
-gsap.set("#darkgraypixie2", {
-  scale: 2,
-  transformOrigin: "50% 50%",
-  opacity: 0.3,
-  x: "-50%",
-});
+// gsap.set("#darkgraypixie2", {
+//   scale: 2,
+//   transformOrigin: "50% 50%",
+//   opacity: 0.3,
+//   x: "-50%",
+// });
 gsap.set("#darkgraypixie", {
   scale: 2,
   transformOrigin: "50% 50%",
@@ -58,16 +58,16 @@ gsap.to("#darkgraypixie", {
   scrub: true,
   duration: 17.5,
 });
-gsap.to("#darkgraypixie2", {
-  transformOrigin: "50% 50%",
-  x: 5000,
-  repeat: -1,
-  yoyo: true,
-  ease: "back",
-  scrub: true,
-  duration: 17.5,
-  opacity: 0.3,
-});
+// gsap.to("#darkgraypixie2", {
+//   transformOrigin: "50% 50%",
+//   x: 5000,
+//   repeat: -1,
+//   yoyo: true,
+//   ease: "back",
+//   scrub: true,
+//   duration: 17.5,
+//   opacity: 0.3,
+// });
 
 gsap.to("#lightgraypixie", {
   transformOrigin: "50% 50%",
