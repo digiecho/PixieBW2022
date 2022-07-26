@@ -416,6 +416,12 @@ input:-webkit-autofill:active {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+.st0 {
+  fill: #4b4b4b;
+}
+.st1 {
+  fill: #666666;
+}
 
 .container.flex-grow-1.container-fluid {
   overflow: auto;

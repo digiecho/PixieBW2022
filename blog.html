@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no,user-scalable=no"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <title>Blog</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
@@ -25,6 +25,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
     />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-235665113-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-235665113-1');
+</script>
   </head>
 
   <body>
@@ -39,7 +49,7 @@
     </div>
     <div id="twinkling" class="twinkling" >
 
-      <img class="stars" src="./assets/img/stars.png" mask="url(#twinkling)"></img>
+      <img alt="stars" class="stars" src="./assets/img/stars.png" mask="url(#twinkling)"></img>
     </div>
     <div class="clouds"></div>
     <svg
@@ -54,14 +64,6 @@
       y="0px"
       xml:space="preserve"
     >
-      <style type="text/css">
-        .st0 {
-          fill: #4b4b4b;
-        }
-        .st1 {
-          fill: #666666;
-        }
-      </style>
       <path
         id="darkgraypixie2"
         class="st0"
@@ -955,7 +957,7 @@
     ></a>
     <nav class="navbar navbar-dark bg-my navbar-expand" id="sidebar-wrapper">
       <div class="container">
-        <button
+        <button title="Nav Menu"
           data-bs-toggle="collapse"
           class="navbar-toggler d-none"
           data-bs-target="#"
@@ -1022,10 +1024,10 @@
                 <li class="list-inline-item">
                   <a
                     href="https://www.checkatrade.com/trades/PixieDustCleaningService"
-                    ><img
+                    ><img alt="check a trade"
                       class="fa"
                       src="https://www.checkatrade.com/images/branduse/checkatrade-stacked-sm.png"
-                      style="height: 16px"
+                      
                   /></a>
                 </li>
               </ul>
@@ -1058,31 +1060,31 @@
             style="margin-bottom: 26px"
           >
             <li class="list-inline-item">
-              <a href="tel:+447387187385"><i class="fa fa-phone"></i></a>
+              <a title="phone" href="tel:+447387187385"><i class="fa fa-phone"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/pixiedustcleaningservice/"
+              <a title="instagram" href="https://www.instagram.com/pixiedustcleaningservice/"
                 ><i class="fab fa-instagram"></i
               ></a>
             </li>
             <li class="list-inline-item">
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a title="twitter" href="#"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.facebook.com/PixieDustCleaningServiceNE"
+              <a title="facebook" href="https://www.facebook.com/PixieDustCleaningServiceNE"
                 ><i class="fab fa-facebook"></i
               ></a>
             </li>
             <li class="list-inline-item">
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a title="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
             </li>
             <li class="list-inline-item">
               <a
                 href="https://www.checkatrade.com/trades/PixieDustCleaningService"
-                ><img
+                ><img alt="check a trade"
                   class="fa"
                   src="https://www.checkatrade.com/images/branduse/checkatrade-stacked-sm.png"
-                  style="height: 16px"
+                  
               /></a>
             </li>
           </ul>
